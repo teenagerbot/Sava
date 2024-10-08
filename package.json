@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "esosdb": "^3.2.1",
+    "express": "^4.19.2",
+    "file-system-db": "^2.1.0",
+    "js-hash-encoding": "^1.0.4",
+    "nedb": "^1.8.0",
+    "socket.io": "^4.7.5"
+  }
+}

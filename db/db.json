@@ -1,0 +1,40 @@
+[
+  {
+    "tovs": [
+      {
+        "category": "КЕДИ",
+        "sezon": "2",
+        "tovar": "kiii",
+        "price": 3200,
+        "pairs": "8",
+        "boxes": 2,
+        "code": "loo"
+      },
+      {
+        "category": "ТУФЛІ ЖІНОЧІ",
+        "sezon": "2",
+        "tovar": "prodcs",
+        "price": 5800,
+        "pairs": "2",
+        "boxes": 1,
+        "code": "thgjyuk"
+      }
+    ],
+    "user": {
+      "typepost": [
+        {
+          "type": "NP",
+          "viddilennya": "4"
+        },
+        {
+          "type": "UKR"
+        }
+      ],
+      "price": "9000",
+      "name": "Антон",
+      "tel": "0987756213",
+      "place": "Київ",
+      "usercode": 31954
+    }
+  }
+]

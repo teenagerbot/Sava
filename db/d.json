@@ -1,0 +1,25 @@
+{
+  "tovs": [
+    {
+      "category": "МОКАСИНИ ДИТЯЧІ",
+      "sezon": 1,
+      "tovar": "МОКАСИНИ ДИТЯЧІ y",
+      "price": "2000",
+      "pairs": "43",
+      "code": "sfhw85y"
+    }
+  ],
+  "user": {
+    "name": "Антон",
+    "tel": "75753753",
+    "place": "Kyiv",
+    "usercode": 723652635,
+    "typepost": [{
+      "type": "NP",
+      "viddilennya": "234"
+    }, {
+      "type": "UKR",
+      "viddilennya": "23"
+    }]
+  }
+}

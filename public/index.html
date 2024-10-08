@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Онлайн магазин для замовлення взуття оптом з широким асортиментом на будь яку погоду та пору року, якість продукції чудова" />
+    <meta name="keywords" content="Бурки жіночі, бабуші, бурки чоловічі, дідуші, домашні капці, жіноче зимове взуття, чоловіче зимове взуття, дитяче зимове взуття, туфлі жіночі, гумові чоботи жіночі ПВХ, гумові чоботи жіночі ЕВА, гумові чоботи чоловічі ПВХ, гумові чоботи чоловічі ЕВА, гумові чоботи дитячі ПВХ, гумові чоботи дитячі ЕВА, галоші жіночі, галоші чоловічі, мокасини дитячі, мокасини жіночі, мокасини чоловічі, кросівки жіночі, кросівки чоловічі, кеди, туфлі жіночі, шльопанці жіночі, шльопанці чоловічі, шльопанці дитячі, шльопанці підліткові, опт, взуття, взуття оптом, зима, літо, весна, осінь" />
+    <link rel="icon" href="./images/logo.svg">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin/styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <aside
+      class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left"
+      id="show-side-navigation1"
+    >
+      <i
+        class="uil-bars close-aside d-md-none d-lg-none"
+        data-close="show-side-navigation1"
+      ></i>
+      <div
+        class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4"
+      >
+        <div class="logotype"><div class="d1"></div><img
+          class="rounded-pill img-fluid"
+          width="65"
+          src="./images/logo.svg"/><div class="d2"></div></div>
+        <div class="ms-2">
+          <h5 class="fs-6 mb-0">
+            <a class="text-decoration-none" href="#">ObuvEx</a>
+          </h5>
+          <p class="mt-1 mb-0">Магазин взуття</p>
+        </div>
+      </div>
+
+      <div class="search position-relative text-center px-4 py-3 mt-2">
+        <input
+          type="text"
+          class="form-control w-100 border-0 bg-transparent"
+          placeholder="Search here"
+          autocomplete="off"
+        />
+        <i class="fa fa-search position-absolute d-block fs-6"></i>
+      </div>
+<div class="list">
+      <ul class="categories list-unstyled">
+        <li class="has-dropdown">
+          <i class="uil-estate fa-fw"></i><a href="#"> Сезон</a>
+          <ul class="sidebar-dropdown list-unstyled">
+            <li><a href="#" id="onm">Весна-літо</a></li>
+            <li><a href="#" id="pnm">Зима-осінь</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <i class="uil-panel-add"></i><a href="#"> Більше</a>
+          <ul class="sidebar-dropdown list-unstyled">
+            <li><a href="#" id="sales">Акційні товари</a></li>
+            <li><a href="#" id="baby">Дитяче взуття</a></li>
+            <li><a href="#" id="nobb">Доросле взуття</a></li>
+            <li class="has-dropdown" id="more">
+              <a href="#"> Більше</a>
+              <ul class="sidebar-dropdown list-unstyled">
+                <li><a href="#" idd="1">БУРКИ ЖІНОЧІ, БАБУШІ</a></li>
+                <li><a href="#" idd="1">БУРКИ ЧОЛОВІЧІ, ДІДУШИ</a></li>
+                <li><a href="#" idd="1">ДОМАШНІ КАПЦІ</a></li>
+                <li><a href="#" idd="1">ЖІНОЧЕ ЗИМОВЕ ВЗУТТЯ</a></li>
+                <li><a href="#" idd="1">ЧОЛОВІЧЕ ЗИМОВЕ ВЗУТТЯ</a></li>
+                <li><a href="#" idd="1">ДИТЯЧЕ ЗИМОВЕ ВЗУТТЯ</a></li>
+                <li><a href="#" idd="1">ТУФЛІ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="1">ГУМОВІ ЧОБОТИ ЖІНОЧІ ПВХ / ЕВА</a></li>
+                <li><a href="#" idd="1">ГУМОВІ ЧОБОТИ ЧОЛОВІЧІ ПВХ / ЕВА</a></li>
+                <li><a href="#" idd="1">ГУМОВІ ЧОБОТИ ДИТЯЧІ ПВХ / ЕВА</a></li>
+                <li><a href="#" idd="1">ГАЛОШІ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="1">ГАЛОШІ ЧОЛОВІЧІ</a></li>
+                <li><a href="#" idd="2">МОКАСИНИ ДИТЯЧІ</a></li>
+                <li><a href="#" idd="2">МОКАСИНИ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="2">МОКАСИНИ ЧОЛОВІЧІ</a></li>
+                <li><a href="#" idd="2">КРОСІВКИ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="2">КРОСІВКИ ЧОЛОВІЧІ</a></li>
+                <li><a href="#" idd="2">КЕДИ</a></li>
+                <li><a href="#" idd="2">ТУФЛІ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="2">ШЛЬОПАНЦІ І В'ЄТНАМКИ ЖІНОЧІ</a></li>
+                <li><a href="#" idd="2">ШЛЬОПАНЦІ ЧОЛОВІЧІ</a></li>
+                <li><a href="#" idd="2">ШЛЬОПАНЦІ ДИТЯЧІ</a></li>
+                <li><a href="#" idd="2">ШЛЬОПАНЦІ ПІДЛІТКОВІ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <i class="uil-panel-add"></i><a href="#"> Матеріали</a>
+          <ul class="sidebar-dropdown list-unstyled">
+            <li><a href="#" onclick="open(`${location.protocol}//${location.host}/privacy.html`, 'window', 'width=1000px,height=700px')">Політика конфіденційності</a></li>
+            <li><a href="#" onclick="open(`https://t.me/ObuvEx`, 'window', 'width=1000px,height=700px')"><spb class="logos--telegram"></spb>Telegram</a></li>
+            <li><a href="#" onclick="open(`https://invite.viber.com/?g2=AQB2CbSq4s6xblKawS65o2jIXaTpv34zAb%2B4fjQUU0k8fHy%2F4RaqFZ4pxs0cdugk`, 'window', 'width=1000px,height=700px')"><spb class="fa-brands--viber"></spb>Viber</a></li>
+            <li><a href="#" onclick="open(`https://www.instagram.com/_obuvex_?igsh=MWh6YWtvOHluY2FtZg%3D%3D&utm_source=qr`, 'window', 'width=1000px,height=700px')"><spb class="skill-icons--instagram"></spb>Instagram</a></li>
+          </ul>
+        </li>
+        <li id="xx">
+          <button id="buy">Замовити<sp></sp></button>
+        </li>
+      </ul></div>
+      <div class="btm">
+      <hr>
+      <jkl>ObuvEx © 2024</jkl>
+        </div>
+    </aside>
+
+    <section id="wrapper">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-2">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#toggle-navbar"
+              aria-controls="toggle-navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="uil-bars text-white"></i>
+            </button>
+            <a class="navbar-brand" href="#"
+              >Obuv<span class="main-color">Ex</span></a
+            >
+          </div>
+          <div class="socials">
+            <a onclick="open(`https://t.me/ObuvEx`, 'window', 'width=1000px,height=700px')"><span class="logos--telegram"></span></a>
+            <a onclick="open(`https://invite.viber.com/?g2=AQB2CbSq4s6xblKawS65o2jIXaTpv34zAb%2B4fjQUU0k8fHy%2F4RaqFZ4pxs0cdugk`, 'window', 'width=1000px,height=700px')"><span class="fa-brands--viber"></span></a>
+            <a onclick="open(`https://www.instagram.com/_obuvex_?igsh=MWh6YWtvOHluY2FtZg%3D%3D&utm_source=qr`, 'window', 'width=1000px,height=700px')"><span class="skill-icons--instagram"></span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="toggle-navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item tls">
+                <button id="edit" class="tools noactive shno">Редагувати</button>
+              </li>
+              <li class="nav-item tls">
+                <li class="nav-item tls">
+                  <button id="changeprice" class="tools noactive shno">Змінити ціну</button>
+                </li>
+              </li>
+              <li class="nav-item tls">
+                <button id="delete" class="tools noactive shno">Видалити</button>
+              </li>
+              <li class="nav-item">
+                <button id="create" class="tools shno">Додати</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i
+                    class="ri--admin-line" id="login"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="main">
+      <span class="loader"></span>
+      <div class="cards">
+        <!-- <div class="carde">
+        <div class="wrapper">
+          <div class="pr">
+            <img src="images/1.png" class="cover-image" />
+          </div>
+        </div>
+        <img src="images/1.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div>
+      <div class="carde">
+        <div class="wrapper">
+          <img src="images/2.png" class="cover-image" />
+        </div>
+        <img src="images/2.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div>
+      <div class="carde">
+        <div class="wrapper">
+          <img src="images/3.png" class="cover-image" />
+        </div>
+        <img src="images/3.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div>
+      <div class="carde">
+        <div class="wrapper">
+          <img src="images/4.png" class="cover-image" />
+        </div>
+        <img src="images/4.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div>
+      <div class="carde">
+        <div class="wrapper">
+          <img src="images/4.png" class="cover-image" />
+        </div>
+        <img src="images/4.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div>
+      <div class="carde">
+        <div class="wrapper">
+          <img src="images/4.png" class="cover-image" />
+        </div>
+        <img src="images/4.png" class="character" />
+        <div class="info">
+          <name>Кроссівки чоловічі</name>
+          <price>12.50 грн</price>
+        </div>
+      </div> -->
+      </div>
+    </div>
+    <div class="blur"></div>
+    <div class="formlogin">
+      <close class="material-symbols--close"></close>
+      <div class="controls">
+        <input id="usnm" placeholder="Нік" autocomplete="off">
+        <input type="password" id="pass" placeholder="Пароль" autocomplete="new-password">
+        <button id="log">Увійти</button>
+      </div>
+      <button id="logout" style="display:none;">Вийти</button>
+    </div>
+    <div id="chn">
+      <close class="material-symbols--close" id="xx"></close>
+      <div class="controls">
+        <input type="number" id="jkpr" autocomplete="off">
+        <div class="ctrls">
+          <div class="sale"><spnj></spnj><gf>Акція</gf></div>
+        </div>
+        <errort>Знижена ціна повинна бути менша за попередню ціну</errort>
+        <button id="chng" class="noactive">Змінити</button>
+      </div>
+    </div>
+    <div class="jk" id="createItem">
+      <close class="material-symbols--close" id="cls"></close>
+      <div class="controls">
+        <div class="imagex">
+          <div class="loadr"></div>
+          <im class="bx--image"></im>
+          <input type="file" id="img">
+        </div>
+        <input type="text" id="nametov" placeholder="Назва" autocomplete="off">
+        <textarea id="desc" placeholder="Опис"></textarea>
+        <select id="sezon">
+          <option value="0" disabled selected>Обери сезон</option>
+          <option value="2">Весна-літо</option>         
+          <option value="1">Зима-осінь</option>
+        </select>
+        <select id="categ">
+          <option value="0" disabled selected>Обери категорію</option>
+        </select>
+        <div class="pairsizes">
+          <h2>Доступні розміри пар</h2>
+          <div class="dd">
+            <select id=start>
+              <option value="0" disabled selected>0</option>
+            </select>
+            <span> - </span>
+            <select id=end>
+              <option value="0" disabled selected>0</option></select>
+          </div>
+        </div>
+        <input id="tovcode" placeholder="Введи код товару" autocomplete="off">
+        <h2>Кількість пар в ящику</h2>
+        <input type="number" min=1 id="pairss" placeholder="К-сть пар" autocomplete="off">
+        
+        
+        
+        <div class="iim">
+        <input type="number" id="price" placeholder="Ціна" autocomplete="off">
+          <text>грн.</text>
+        </div>
+        <button id="createItemHold">Створити</button>
+      </div>
+    </div>
+    <div class="jke" id="editItem">
+      <close class="material-symbols--close" id="clssd"></close>
+      <div class="controls">
+        <input type="text" id="nametove" placeholder="Назва" autocomplete="off">
+        <textarea id="desce" placeholder="Опис"></textarea>
+        <div class="pairsizesa">
+          <h2>Доступні розміри пар</h2>
+          <div class="dda">
+            <select id=starta>
+              <option value="0" disabled selected>0</option>
+            </select>
+            <span> - </span>
+            <select id=enda>
+              <option value="0" disabled selected>0</option></select>
+          </div>
+        </div>
+        <input type="number" min=1 id="pairssa" placeholder="К-сть пар" autocomplete="off">
+        <button id="editItemHold">Змінити</button>
+      </div>
+    </div>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-hash-encoding@1.0.4/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/audioloader.js"></script>
+    <script src="script.js"></script>
+    <script src="admin/js/script.js"></script>
+    <script>
+      let mutationObserver = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    console.log(mutation);
+    
+  });
+});
+mutationObserver.observe(document.documentElement, {
+  attributes: true,
+  characterData: true,
+  childList: true,
+  subtree: true,
+  attributeOldValue: true,
+  characterDataOldValue: true
+});
+let dnt = document.createElement("button");
+dnt.id = "donate";
+dnt.innerHTML = `Задонатити`;
+document.body.appendChild(dnt);
+dnt.onclick= () => {
+  const ge = document.createElement("div");
+  ge.id = "hu";
+  ge.innerHTML = `<h2>Привіт, ти можеш допомогти мені в розробці нового функціоналу, я буду радий якщо ти дасиш мені трішки на какао(каву я не люблю😊)</h2><h3>Крипта:</h3>DOGS: <sb>UQC7Jey3GPlfZ0kfRWzMO2U_MDXOpOa4RZavy3B23wwu6FD1</sb><br>Bitcoin(BTC): <sb>1LEfnDtbncXhjCjqNFry2kjha6zNbwEdoy</sb><br>TON: <sb>UQDVZ_k-4D-XkOlV0YxRfU874mO9S4V1WeKZ5Nvp8Rj21dWM</sb><br>HMSTR: <sb>UQC7Jey3GPlfZ0kfRWzMO2U_MDXOpOa4RZavy3B23wwu6FD1</sb><h3>Банк:</h3>Privat24: <sb>4149 4990 7321 4213</sb><br><hn>Закрити</hn>`;
+  document.body.appendChild(ge);
+  document.querySelector("hn").onclick = () => {
+    ge.remove();
+  }
+}
+    </script>
+  </body>
+</html>

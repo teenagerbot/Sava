@@ -1,0 +1,270 @@
+{
+  "1": [
+    {
+      "t": "БУРКИ ЖІНОЧІ, БАБУШІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": true,
+        "old_price": "1250.00"
+      },
+      "_id": "YzuXleJPU6p9mn041"
+    },
+    {
+      "t": "БУРКИ ЧОЛОВІЧІ, ДІДУШИ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn042"
+    },
+    {
+      "t": "ДОМАШНІ КАПЦІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn043"
+    },
+    {
+      "t": "ЧОЛОВІЧЕ ЗИМОВЕ ВЗУТТЯ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn044"
+    },
+    {
+      "t": "ДИТЯЧЕ ЗИМОВЕ ВЗУТТЯ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn045"
+    },
+    {
+      "t": "ГУМОВІ ЧОБОТИ ЖІНОЧІ  ПВХ / ЕВА",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn046"
+    },
+    {
+      "t": "ГУМОВІ ЧОБОТИ ЧОЛОВІЧІ  ПВХ / ЕВА",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn047"
+    },
+    {
+      "t": "ГАЛОШІ ЖІНОЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn048"
+    },
+    {
+      "t": "ГАЛОШІ ЧОЛОВІЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn049"
+    },
+    {
+      "t": "ГУМОВІ ЧОБОТИ ДИТЯЧІ  ПВХ / ЕВА",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn040"
+    },
+    {
+      "t": "ЖІНОЧЕ ЗИМОВЕ ВЗУТТЯ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0411"
+    }
+  ],
+  "2": [
+    {
+      "t": "МОКАСИНИ ДИТЯЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0412"
+  },
+    {
+      "t": "МОКАСИНИ ЖІНОЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": true,
+        "old_price": "1250.00"
+      },
+      "_id": "YzuXleJPU6p9mn0413"
+  },
+    {
+      "t": "МОКАСИНИ ЧОЛОВІЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0414"
+},
+    {
+      "t": "КРОСІВКИ ЖІНОЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0415"
+},
+    {
+      "t": "КРОСІВКИ ЧОЛОВІЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0416"
+},
+    {
+      "t": "КЕДИ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0417"
+},
+    {
+      "t": "ТУФЛІ ЖІНОЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0418"
+},
+    {
+      "t": "ШЛЬОПАНЦІ І В'ЄТНАМКИ ЖІНОЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0419"
+},
+    {
+      "t": "ШЛЬОПАНЦІ ЧОЛОВІЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0420"
+},
+    {
+      "t": "ШЛЬОПАНЦІ ДИТЯЧІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0421"
+},
+    {
+      "t": "ШЛЬОПАНЦІ ПІДЛІТКОВІ",
+      "c": "зима",
+      "d": "Міцні",
+      "p": "1200.00",
+      "i": "./images/2.png",
+      "discount": {
+        "reduced": false,
+        "old_price": "1200.00"
+      },
+      "_id": "YzuXleJPU6p9mn0422"
+}
+  ]
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../images/logo.svg">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.jshttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../icons.css">
+  <title>Admin</title>
+</head>
+<body>
+  <style>
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    margin-top: 5px;
+  }
+  </style>
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+    <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+    <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+      <div class="logotype"><div class="d1"></div><img
+        class="rounded-pill img-fluid"
+        width="65"
+        src="../../images/logo.svg"/><div class="d2"></div></div>
+      <div class="ms-2">
+        <h5 class="fs-6 mb-0">
+           <a class="navbar-brand" href="#">admin<span class="main-color">kit</span></a>
+        </h5>
+        <p class="mt-1 mb-0">Власник магазину</p>
+      </div>
+    </div>
+
+    <ul class="categories list-unstyled">
+      <li class="has-dropdown">
+        <i class="mdi--settings"></i><a href="#"> Налаштування</a>
+        <ul class="sidebar-dropdown list-unstyled">
+          <li><a href="#" id="chnk">Змінити нік</a></li>
+          <li><a href="#" id="chpsw">Змінити пароль</a></li>
+          
+        </ul>
+      </li>
+      <li id="dwnd" class="nac"><i class="--install-desktop"></i>Встановити</li>
+    </ul>
+  </aside>
+
+  <section id="wrapper">
+
+    <div class="p-4">
+      <div class="welcome">
+        <div class="content rounded-3 p-3">
+          <h1 class="fs-3">Вітаємо в панелі адміністратора</h1>
+          <p class="mb-0">Вітаємо, В'ячеслав</p>
+        </div>
+      </div>
+<!-- https://iconify.design/docs/usage/svg/no-code/ -->
+      https://icon-sets.iconify.design/emojione/money-bag/
+      <section class="statistics mt-4">
+        <div class="row">
+          <!-- <div class="col-lg-4">
+            <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+              <i class="solar--box-bold-duotone fs-2 text-center bg-primary"></i>
+              <div class="ms-3">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 count">більше 90 000</h3> <span class="d-block ms-2"></span>
+                </div>
+                <p class="fs-normal mb-0">Товарів придбано</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box d-flex rounded-2 align-items-center mb-4 mb-lg-0 p-3">
+              <i class="grommet-icons--money fs-2 text-center bg-primary "></i>
+              <div class="ms-3">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 count">більше 90 000</h3> <span class="d-block ms-2"></span>
+                </div>
+                <p class="fs-normal mb-0">Доларів зароблено завдяки нашому сайту</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box d-flex rounded-2 align-items-center p-3">
+              <i class="raphael--users fs-2 text-center bg-primary rounded-circle"></i>
+              <div class="ms-3">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 count">більше 90 000</h3> <span class="d-block ms-2"></span>
+                </div>
+                <p class="fs-normal mb-0">Користувачів придбали товар</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="table">
+            <table>
+              <tr>
+                <th>Ім'я покупця</th>
+                <th>Телефон</th>
+                <th>Корзина покупця</th>
+              </tr>
+              <!-- <TR>
+                <td>Володимир</td>
+                <td>(380) 98 779 51 21</td>
+                <td>Мокасини, берці, чоботи, кросівки зимові, кросівки літні</td>
+              </TR>
+              <TR class="tovs">
+                <td>Фомен</td>
+                <td>(380) 98 780 51 29</td>
+                <td>Мокасини</td>
+              </TR> -->
+            </table>
+          </div>
+        </div>
+      </section>
+      <ds></ds>
+      
+
+      <!-- <section class="statis mt-4 text-center">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="box bg-primary p-3">
+              <i class="uil-eye"></i>
+              <h3>5,154</h3>
+              <p class="lead">Page views</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="box bg-danger p-3">
+              <i class="uil-user"></i>
+              <h3>245</h3>
+              <p class="lead">User registered</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+            <div class="box bg-warning p-3">
+              <i class="uil-shopping-cart"></i>
+              <h3>5,154</h3>
+              <p class="lead">Product sales</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box bg-success p-3">
+              <i class="uil-feedback"></i>
+              <h3>5,154</h3>
+              <p class="lead">Transactions</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+  </section>
+  <script src="../socket.io/socket.io.js"></script>
+  <script src="js/audioloader.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
