@@ -80,8 +80,8 @@ Server.on("content", (users) => {
   for (let user of users) {
     const TR = document.createElement("tr");
     TR.setAttribute("tovs", JSON.stringify(user.tovs));
-    TR.setAttribute("np", JSON.stringify(user.user.typepost[0].viddilennya))?JSON.stringify(user.user.typepost[0].viddilennya):0;
-    TR.setAttribute("ukr", JSON.stringify(user.user.typepost[1].viddilennya))?JSON.stringify(user.user.typepost[1].viddilennya):0;
+    TR.setAttribute("np", JSON.stringify(user.user.typepost[0].viddilennya)) ? JSON.stringify(user.user.typepost[0].viddilennya) : 0;
+    TR.setAttribute("ukr", JSON.stringify(user.user.typepost[1].viddilennya)) ? JSON.stringify(user.user.typepost[1].viddilennya) : 0;
     TR.setAttribute("place", JSON.stringify(user.user.place));
     TR.innerHTML = `<td class="getinfo">${user.user.name}</td>
 <td>${user.user.tel}</td>
@@ -96,17 +96,17 @@ document.querySelector("table").onclick = (ev) => {
     Server.emit("sold", ev.target.parentNode.parentNode.getAttribute("doid"));
   } else if (ev.target.tagName == "TD" && ev.target.className == "getinfo") {
     const Json = JSON.parse(ev.target.parentNode.getAttribute("tovs"));
-    const End = `<div class="info">Доставка: <button id="dost1" style="display:${ev.target.parentNode.getAttribute("np") == "undefined"?"none":"block"}"></button><button id="dost2" tyle="display:${ev.target.parentNode.getAttribute("ukr") == "undefined"?"none":"block"}"></button></div>
+    const End = `<div class="info">Доставка: <button id="dost1" style="display:${ev.target.parentNode.getAttribute("np") == "undefined" ? "none" : "block"}"></button><button id="dost2" tyle="display:${ev.target.parentNode.getAttribute("ukr") == "undefined" ? "none" : "block"}"></button></div>
     </div>`
     const InfoBox = document.createElement("div");
     let h = ", ";
     let n = " відділення\'"
     InfoBox.id = "infobox";
     InfoBox.innerHTML = `<close class="material-symbols--close" id="clser"></close><div class="infoview">
-    <div class="info">Доставка: <button id="dost1" ${ev.target.parentNode.getAttribute("np") == "undefined"?"":"pl=\'"+ev.target.parentNode.getAttribute("place")+h+ev.target.parentNode.getAttribute("np")+n} style="display:${ev.target.parentNode.getAttribute("np") == "undefined"?"none":"block"}"></button><button id="dost2" ${ev.target.parentNode.getAttribute("ukr") == "undefined"?"":"pl=\'"+ev.target.parentNode.getAttribute("place")+h+ev.target.parentNode.getAttribute("ukr")+n} style="display:${ev.target.parentNode.getAttribute("ukr") == "undefined"?"none":"block"}"></button></div>
+    <div class="info">Доставка: <button id="dost1" ${ev.target.parentNode.getAttribute("np") == "undefined" ? "" : "pl=\'" + ev.target.parentNode.getAttribute("place") + h + ev.target.parentNode.getAttribute("np") + n} style="display:${ev.target.parentNode.getAttribute("np") == "undefined" ? "none" : "block"}"></button><button id="dost2" ${ev.target.parentNode.getAttribute("ukr") == "undefined" ? "" : "pl=\'" + ev.target.parentNode.getAttribute("place") + h + ev.target.parentNode.getAttribute("ukr") + n} style="display:${ev.target.parentNode.getAttribute("ukr") == "undefined" ? "none" : "block"}"></button></div>
     </div>`;
     document.body.appendChild(InfoBox)
-    document.querySelector("#dost1").onclick = function() {
+    document.querySelector("#dost1").onclick = function () {
       const kl = document.createElement("div");
       kl.innerHTML = `${this.getAttribute("pl").replaceAll("\"", "")}`;
       kl.className = "tooltip";
@@ -115,7 +115,7 @@ document.querySelector("table").onclick = (ev) => {
         kl.remove();
       }, 5200)
     }
-    document.querySelector("#dost2").onclick = function() {
+    document.querySelector("#dost2").onclick = function () {
       const kl = document.createElement("div");
       kl.innerHTML = `${this.getAttribute("pl").replaceAll("\"", "")}`;
       kl.className = "tooltip";
@@ -124,15 +124,15 @@ document.querySelector("table").onclick = (ev) => {
         kl.remove();
       }, 5200)
     }
-Json.forEach((elem, index) => {
-  const g = document.createElement("div");
-  g.className = "infox";
-  g.innerHTML = `<div class="num">${++index}</div><div class="info">Категорія: ${elem.category}</div><div class="info">Сезон: ${elem.sezon == 1?"Зима-осінь": "Весна-літо"}</div><div class="info">Товар: ${elem.tovar}</div><div class="info">К-сть ящиків: ${elem.boxes}</div><div class="info">Ціна: ${Number(elem.price)}</div><div class="info">Код товару: ${elem.code}</div>`;
-  InfoBox.querySelector(".infoview").appendChild(g)
-})
-document.querySelector("#clser").onclick = () => {
-  InfoBox.remove()
-}
+    Json.forEach((elem, index) => {
+      const g = document.createElement("div");
+      g.className = "infox";
+      g.innerHTML = `<div class="num">${++index}</div><div class="info">Категорія: ${elem.category}</div><div class="info">Сезон: ${elem.sezon == 1 ? "Зима-осінь" : elem.sezon == 2 ? "Весна-літо": "Універсальне"}</div><div class="info">Товар: ${elem.tovar}</div><div class="info">К-сть ящиків: ${elem.boxes}</div><div class="info">Ціна: ${Number(elem.price)}</div><div class="info">Код товару: ${elem.code}</div>`;
+      InfoBox.querySelector(".infoview").appendChild(g)
+    })
+    document.querySelector("#clser").onclick = () => {
+      InfoBox.remove()
+    }
   }
 }
 Server.emit("getPerms");
@@ -149,11 +149,10 @@ document.querySelector("ds").onclick = () => {
   LoadAudio("../../audio/neworder.mp3")
 }
 Server.on("orderSAdmin", user => {
-  console.log(user)
   const TR = document.createElement("tr");
   TR.setAttribute("tovs", JSON.stringify(user.tovs));
-  TR.setAttribute("np", JSON.stringify(user.user.typepost[0].viddilennya))?JSON.stringify(user.user.typepost[0].viddilennya):0;
-  TR.setAttribute("ukr", JSON.stringify(user.user.typepost[1].viddilennya))?JSON.stringify(user.user.typepost[1].viddilennya):0;
+  TR.setAttribute("np", JSON.stringify(user.user.typepost[0].viddilennya)) ? JSON.stringify(user.user.typepost[0].viddilennya) : 0;
+  TR.setAttribute("ukr", JSON.stringify(user.user.typepost[1].viddilennya)) ? JSON.stringify(user.user.typepost[1].viddilennya) : 0;
   TR.setAttribute("place", JSON.stringify(user.user.place));
   TR.innerHTML = `<td class="getinfo">${user.user.name}</td>
 <td>${user.user.tel}</td><td>${user.user.usercode}</td><td class="cldel" doid="${user.user.usercode}"><button id="sold"><span class="dashicons--yes" translate="no"></span></button><button id="ddel"><span class="material-symbols-outlined" translate="no">delete</span></button><button class="chat"><a href="https://t.me/+${user.user.tel}" target="_blank" class="material-symbols-outlined" translate="no">chat</a></button></td>`;
@@ -162,11 +161,11 @@ Server.on("orderSAdmin", user => {
 })
 document.querySelector("#chnk").onclick = () => {
   let NewNick = prompt("Введіть новий нікнейм(не менше ніж 5 літер)");
-  NewNick?SendChange("nick", NewNick):alert("Нікнейм не може бути порожнім");
+  NewNick ? SendChange("nick", NewNick) : alert("Нікнейм не може бути порожнім");
 }
 document.querySelector("#chpsw").onclick = () => {
   let NewPass = prompt("Введіть новий пароль");
-  NewPass?SendChange("pass", NewPass):alert("Пароль не може бути порожнім");
+  NewPass ? SendChange("pass", NewPass) : alert("Пароль не може бути порожнім");
 }
 function SendChange(type, data) {
   Server.emit("change", {

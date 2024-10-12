@@ -36,5 +36,63 @@
       "place": "Київ",
       "usercode": 31954
     }
+  },
+  {
+    "tovs": [
+      {
+        "category": "Roses",
+        "sezon": "3",
+        "tovar": "troyanda",
+        "price": 40,
+        "pairs": "2",
+        "boxes": 2,
+        "code": "juu"
+      }
+    ],
+    "user": {
+      "typepost": [
+        {
+          "type": "NP"
+        },
+        {
+          "type": "UKR",
+          "viddilennya": "52"
+        }
+      ],
+      "price": "40",
+      "name": "Антон",
+      "tel": "0987795234",
+      "place": "Київ",
+      "usercode": 30457
+    }
+  },
+  {
+    "tovs": [
+      {
+        "category": "Roses",
+        "sezon": "3",
+        "tovar": "troyanda",
+        "price": 20,
+        "pairs": "1",
+        "boxes": 1,
+        "code": "juu"
+      }
+    ],
+    "user": {
+      "typepost": [
+        {
+          "type": "NP",
+          "viddilennya": "5"
+        },
+        {
+          "type": "UKR"
+        }
+      ],
+      "price": "20",
+      "name": "SERVER_KHNU",
+      "tel": "0987756213",
+      "place": "Київ",
+      "usercode": 23888
+    }
   }
 ]

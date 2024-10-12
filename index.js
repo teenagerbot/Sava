@@ -98,6 +98,16 @@ io.on('connection', (socket) => {
   socket.on("getPerms", () => {
     io.to(socket.id).emit("setPerms", fs.readFileSync("./activators.json", "utf8"));
   })
+  socket.on("giveCats", () => {
+    let tovs = JSON.parse(fs.readFileSync("./db/tovars.json", "utf-8"));
+    io.to(socket.id).emit("sendCats", tovs);
+  })
+  socket.on("delcat", data => {
+    let tovs = JSON.parse(fs.readFileSync("./db/tovars.json", "utf-8"));
+    delete tovs[data.sezon][data.category];
+    fs.writeFileSync("./db/tovars.json", JSON.stringify(tovs, null, 2));
+    io.to(socket.id).emit("deletedCat");
+  })
   socket.on("sold", iid => {
     let DBbuyed = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
     let activs = JSON.parse(fs.readFileSync("./activators.json", "utf8"));
@@ -225,6 +235,21 @@ io.on('connection', (socket) => {
       io.to(socket.id).emit("added");
     })
   });
+  socket.on("getCategs", () => {
+    let obh = JSON.parse(fs.readFileSync("./db/tovars.json", "utf-8"));
+    const CTGS = [Object.keys(obh["1"]), Object.keys(obh["2"]), Object.keys(obh["3"])];
+    io.to(socket.id).emit("postCategs", CTGS);
+  })
+  socket.on("createCategory", data => {
+    let obh = JSON.parse(fs.readFileSync("./db/tovars.json", "utf-8"));
+    obh[data.sezon][data.category] = [];
+    fs.writeFileSync("./db/tovars.json", JSON.stringify(obh, null, 2))
+    io.to(socket.id).emit("createdCtg");
+  })
+  socket.on("getTovars", () => {
+    const TovFile = JSON.parse(fs.readFileSync("./db/tovars.json", "utf8"));
+    io.to(socket.id).emit("pullTovars", TovFile);
+  })
   socket.on("loadInfo", data => {
     let fg = JSON.parse(fs.readFileSync("./db/tovars.json", "utf8"));
     let h = {

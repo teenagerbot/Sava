@@ -60,6 +60,7 @@
           <ul class="sidebar-dropdown list-unstyled">
             <li><a href="#" id="onm">Весна-літо</a></li>
             <li><a href="#" id="pnm">Зима-осінь</a></li>
+            <li><a href="#" id="unm">Універсальне</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
@@ -68,10 +69,12 @@
             <li><a href="#" id="sales">Акційні товари</a></li>
             <li><a href="#" id="baby">Дитяче взуття</a></li>
             <li><a href="#" id="nobb">Доросле взуття</a></li>
+            <li><a href="#" id="crcat">Створити категорію</a></li>
+              <li><a href="#" id="dlcat">Видалити категорію</a></li>
             <li class="has-dropdown" id="more">
-              <a href="#"> Більше</a>
-              <ul class="sidebar-dropdown list-unstyled">
-                <li><a href="#" idd="1">БУРКИ ЖІНОЧІ, БАБУШІ</a></li>
+              <a href="#"> Категорії</a>
+              <ul class="sidebar-dropdown list-unstyled" id="ourtovs">
+                <!-- <li><a href="#" idd="1">БУРКИ ЖІНОЧІ, БАБУШІ</a></li>
                 <li><a href="#" idd="1">БУРКИ ЧОЛОВІЧІ, ДІДУШИ</a></li>
                 <li><a href="#" idd="1">ДОМАШНІ КАПЦІ</a></li>
                 <li><a href="#" idd="1">ЖІНОЧЕ ЗИМОВЕ ВЗУТТЯ</a></li>
@@ -93,7 +96,7 @@
                 <li><a href="#" idd="2">ШЛЬОПАНЦІ І В'ЄТНАМКИ ЖІНОЧІ</a></li>
                 <li><a href="#" idd="2">ШЛЬОПАНЦІ ЧОЛОВІЧІ</a></li>
                 <li><a href="#" idd="2">ШЛЬОПАНЦІ ДИТЯЧІ</a></li>
-                <li><a href="#" idd="2">ШЛЬОПАНЦІ ПІДЛІТКОВІ</a></li>
+                <li><a href="#" idd="2">ШЛЬОПАНЦІ ПІДЛІТКОВІ</a></li> -->
               </ul>
             </li>
           </ul>
@@ -269,7 +272,8 @@
         <textarea id="desc" placeholder="Опис"></textarea>
         <select id="sezon">
           <option value="0" disabled selected>Обери сезон</option>
-          <option value="2">Весна-літо</option>         
+          <option value="3">Унікальне</option>
+          <option value="2">Весна-літо</option>
           <option value="1">Зима-осінь</option>
         </select>
         <select id="categ">

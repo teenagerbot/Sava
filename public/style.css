@@ -443,15 +443,15 @@ input#img {
 .imagex {
   width: 80px;
   height: 80px;
-  border: 2px #4f4b57 solid;
-  user-select: none;
-  cursor: pointer;
+  nter;
   /* display: flex; */
   justify-content: center;
   align-items: center;
   background-position: center;
   background-size: cover;
   position: relative;
+  outline-style: dashed;
+  outline-width: 3px;
 }
 
 #createItem .controls {
@@ -977,4 +977,75 @@ hn {
   user-select: none;
   font-size: 20px;
   cursor: pointer;
+}
+div#ghtk9kb {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1995ad;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 90000000;
+}
+
+div#ghtk9kb h2 {
+    font-size: 20px;
+}
+
+.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.4;
+}
+
+button#cnwctg {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: navajowhite;
+    background: green;
+    color: white;
+}
+
+button#cldf {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background: #d72424;
+    color: white;
+}
+
+select#hhj {outline-style: ridge;outline-color: green;}
+div#infos {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
+    background: #1995ad;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+}
+
+div#infos h2 {
+    font-size: 20px;
+}
+
+.opts {
+    margin-top: 10px;
+}
+
+.opts button {
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }

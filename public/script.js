@@ -1,35 +1,12 @@
 const server = new io();
 const WebStore = sessionStorage;
 const hashLib = new JSHash();
-const TwoSezon = [
-  "МОКАСИНИ ДИТЯЧІ",
-  "МОКАСИНИ ЖІНОЧІ",
-  "МОКАСИНИ ЧОЛОВІЧІ",
-  "КРОСІВКИ ЖІНОЧІ",
-  "КРОСІВКИ ЧОЛОВІЧІ",
-  "КЕДИ",
-  "ТУФЛІ ЖІНОЧІ",
-  "ШЛЬОПАНЦІ І В'ЄТНАМКИ ЖІНОЧІ",
-  "ШЛЬОПАНЦІ ЧОЛОВІЧІ",
-  "ШЛЬОПАНЦІ ДИТЯЧІ",
-  "ШЛЬОПАНЦІ ПІДЛІТКОВІ",
-];
-const FirstSezon = [
-  "БУРКИ ЖІНОЧІ, БАБУШІ",
-  "БУРКИ ЧОЛОВІЧІ, ДІДУШИ",
-  "ДОМАШНІ КАПЦІ",
-  "ЖІНОЧЕ ЗИМОВЕ ВЗУТТЯ",
-  "ЧОЛОВІЧЕ ЗИМОВЕ ВЗУТТЯ",
-  "ДИТЯЧЕ ЗИМОВЕ ВЗУТТЯ",
-  "ТУФЛІ ЖІНОЧІ",
-  "ГУМОВІ ЧОБОТИ ЖІНОЧІ ПВХ / ЕВА",
-  "ГУМОВІ ЧОБОТИ ЧОЛОВІЧІ ПВХ / ЕВА",
-  "ГУМОВІ ЧОБОТИ ДИТЯЧІ ПВХ / ЕВА",
-  "ГАЛОШІ ЖІНОЧІ",
-  "ГАЛОШІ ЧОЛОВІЧІ",
-];
+let UniversalSezon;
+let TwoSezon = [];
+let FirstSezon = [];
 const Sizes = 50;
 let isaction = undefined;
+let timer = 0;
 
 let ObjectForZamovl = {
   tovs: [],
@@ -48,7 +25,87 @@ let ObjectForZamovl = {
 };
 let Viddilennya1 = null;
 let Viddilennya2 = null;
+let TempVar = null;
+const HtmlListTovs = document.querySelector("#ourtovs");
+const D = document;
+D.new = D.createElement;
+D.search = D.querySelector;
+D.searchAll = D.querySelectorAll;
 
+
+server.emit("getTovars");
+server.on("pullTovars", data => {
+  Object.keys(data).forEach(category => {
+    if (category == "1") {
+      FirstSezon = Object.keys(data[category]);
+    } else if (category == "2") {
+      TwoSezon = Object.keys(data[category]);
+    } else {
+      UniversalSezon = Object.keys(data[category]);
+    }
+    Object.keys(data[category]).forEach(subcategory => {
+      console.log(subcategory)
+      const LI = D.new("li");
+      LI.innerHTML = `<a href="#" idd="${category}">${subcategory}</a>`;
+      HtmlListTovs.appendChild(LI);
+    })
+  })
+})
+D.search("#dlcat").onclick = () => {
+    server.emit("giveCats");
+}
+server.on("sendCats", datas => {
+    TempVar = datas;
+    const Div = D.new("div");
+    Div.id = "infos";
+    Div.innerHTML = /*html*/`<h2>Оберіть сезон</h2>
+<select id="sezns">
+<option value="0" disabled selected>Cезон</option>
+<option value="1">Зима-осінь</option>
+<option value="2">Весна-літо</option>
+<option value="3">Універсальне</option>
+</select>
+<h2>Оберіть категорію</h2>
+<select id="ctegor" class="disabled">
+<option value="0" disabled selected>Категорія</option>
+</select>
+<div class="opts">
+<button id="del" class="disabled">Видалити</button>
+<button id="klor">Закрити</button><br>
+<button id="reload" class="disabled">Перезавантажити</button>
+</div>`;
+    D.body.appendChild(Div);
+    D.search(".blur").style.display = "block";
+  D.search("#reload").onclick = () => location.reload();
+    D.search("#sezns").oninput = function() {
+      D.search("#reload").classList.add("disabled");
+        D.search("#ctegor").innerHTML = /*html*/`<option value="0" disabled selected>Категорія</option>`;
+        Object.keys(datas[this.value]).forEach(elem => {
+            const Option = D.new("option");
+            Option.innerText = elem;
+            D.search("#ctegor").appendChild(Option);
+        });
+        D.search("#ctegor").classList.remove("disabled");
+        D.search("#del").classList.add("disabled");
+    }
+    D.search("#ctegor").oninput = () => {
+      D.search("#del").classList.remove("disabled");
+      D.search("#reload").classList.add("disabled");
+    }
+    D.search("#del").onclick = () => {
+        server.emit("delcat", {
+            sezon: D.search("#sezns").value,
+            category: D.search("#ctegor").value
+        })
+    }
+    D.search("#klor").onclick = () => {
+        Div.remove();
+        D.search(".blur").style.display = "none";
+    }
+})
+server.on("deletedCat", () => {
+  D.search("#reload").classList.remove("disabled");
+})
 function CheckOrder(object) {
   let tmpl;
   if (object.user.name == undefined) {
@@ -83,6 +140,63 @@ document.querySelector("div.cards").onbeforeinput = (t) => {
     );
   }
 };
+document.querySelector("#crcat").onclick = () => {
+  server.emit("getCategs");
+}
+server.on("postCategs", data => {
+  const CRView = D.new("div");
+  CRView.id = "ghtk9kb";
+  CRView.innerHTML = /*html*/`<select id="hhj">
+  <option value="0" disabled selected>Обери сезон</option>
+    <option value="1">Осінь-зима</option>
+    <option value="2">Весна-літо</option>
+    <option value="3">Універсальне</option>
+  </select>
+  <div class="next disabled">
+    <h2>Створіть категорію</h2>
+    <input id="nwct">
+  </div>
+  <div id="conrt">
+    <button id="cnwctg" class="disabled">Створити</button>
+    <button id="cldf">Закрити</button><br>
+    <button id="reload" class="disabled">Перезавантажити</button>
+  </div>`;
+  D.body.appendChild(CRView);
+  document.querySelector("body > div.blur").style.display = "block";
+  D.search("#cldf").onclick = () => {
+    CRView.remove();
+    document.querySelector("body > div.blur").style.display = "none";
+  }
+  document.querySelector("#hhj").oninput = () => {
+      D.search(".next").classList.remove("disabled");
+      D.search("#reload").classList.add("disabled");
+      D.search("#nwct").value = "";
+      D.search("#cnwctg").classList.add("disabled");
+  }
+  D.search("#reload").onclick = () => location.reload();
+  D.search("#nwct").oninput = function() {
+      D.search("#reload").classList.add("disabled");
+    if (this.value.trim().length < 4) {
+      D.search("#cnwctg").classList.add("disabled");
+    } else {
+      if (data[Number(D.search("#hhj").value)-1].includes(this.value.trim())) {
+        D.search("#cnwctg").classList.add("disabled");
+      } else {
+        D.search("#cnwctg").classList.remove("disabled");
+      }
+    }
+  }
+  D.search("#cnwctg").onclick = () => {
+    server.emit("createCategory", {
+      sezon: D.search("#hhj").value,
+      category: D.search("#nwct").value.trim()
+    })
+  }
+})
+server.on("createdCtg", () => {
+  D.search("#reload").classList.remove("disabled");
+    D.search("#nwct").value = "";
+})
 document.querySelector("div.cards").oninput = (t) => {
   if (t.target.tagName == "INPUT") {
     let Pairs = t.target.value;
@@ -517,6 +631,11 @@ setTimeout(() => {
 document.querySelector("#onm").onclick = () => {
   getProducts(2);
   sessionStorage.setItem("sezon", "2");
+  document.querySelector(".loader").style.display = "block";
+};
+document.querySelector("#unm").onclick = () => {
+  getProducts(3);
+  sessionStorage.setItem("sezon", "3");
   document.querySelector(".loader").style.display = "block";
 };
 document.querySelector("#pnm").onclick = () => {
@@ -956,6 +1075,8 @@ document.querySelector("#sezon").oninput = function () {
     BuildList(FirstSezon);
   } else if (this.value == "2") {
     BuildList(TwoSezon);
+  } else if (this.value == "3") {
+    BuildList(UniversalSezon);
   }
 };
 function BuildList(sezon) {
