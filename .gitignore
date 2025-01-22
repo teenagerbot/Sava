@@ -1,4 +1,4 @@
 .vscode
 node_modules
 .idea
-db/h.txt
+./db/h.txt

@@ -94,5 +94,34 @@
       "place": "Київ",
       "usercode": 23888
     }
+  },
+  {
+    "tovs": [
+      {
+        "category": "ЧОЛОВІЧЕ ЗИМОВЕ ВЗУТТЯ",
+        "sezon": "1",
+        "tovar": "Кросівки зимні 1",
+        "price": 400,
+        "pairs": "2",
+        "boxes": 0.1,
+        "code": "326952"
+      }
+    ],
+    "user": {
+      "typepost": [
+        {
+          "type": "NP",
+          "viddilennya": "4"
+        },
+        {
+          "type": "UKR"
+        }
+      ],
+      "price": "400",
+      "name": "hh",
+      "tel": "0987756213",
+      "place": "Kyiv",
+      "usercode": 22560
+    }
   }
 ]

@@ -229,6 +229,7 @@ io.on('connection', (socket) => {
       "isvisible": true
     }
     let obh = JSON.parse(fs.readFileSync("./db/tovars.json", "utf-8"));
+    console.log(sezon, category)
     obh[String(sezon)][category].push(ob);
     fs.writeFileSync("./db/tovars.json", JSON.stringify(obh, null, 2))
     setTimeout(() => {
