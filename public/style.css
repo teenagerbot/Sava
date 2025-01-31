@@ -83,7 +83,7 @@ svg.loader {
 }
 button#buy {
   border: none;
-  background: #46b3c8;
+  background: #4667c8;
   font-size: 26px;
   padding-left: 10px;
   padding-right: 10px;
@@ -188,7 +188,7 @@ button#sendr.active {
 card {
   display: block;
   width: 95%;
-  background: linear-gradient(0deg, #157789, #1995AD);
+  background: linear-gradient(0deg, #151689, #1932ad);
   min-width: 93%;
   border-radius: 20px;
   box-shadow: 0px 0px 10px;
@@ -208,7 +208,7 @@ card {
   justify-content: space-evenly;
   align-items: center;
 }
-.action {background: #157789;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;padding-bottom: 5px;}
+.action {background: #191589;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;padding-bottom: 5px;}
 name {
   text-align: center;
   display: block;
@@ -218,7 +218,7 @@ price {
   text-align: center;
   color: white;
   display: block;
-  background: linear-gradient(0deg, #157789, #1995AD);
+  background: linear-gradient(0deg, #1d1589, #1938ad);
 }
 .image img {width: 150px;height: 150px;}
 .btns_pro {
@@ -390,9 +390,9 @@ button.tools {
   padding-right: 20px;
   font-size: 16px;
   outline: none;
-  background: green;
-  color: #faff0d;
-  border: 2px #bec12b solid;
+  background: #1a1cd1;
+  color: #f4f4ef;
+  border: 2px #0812c8 solid;
   user-select: none;
 }
 .tls {
@@ -555,11 +555,12 @@ div#vvwer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #40a4b8;
+  background: #4050b8;
   width: 25%;
   padding: 11px;
   z-index: 99999999;
   box-shadow: 0px 0px 10px;
+  color: white;
 }
 
 .view {
@@ -574,7 +575,7 @@ div#vvwer {
 }
 input.form-control.w-100.border-0.bg-transparent {
   color: #151515;
-  border-bottom: 2px #1995ad solid !important;
+  border-bottom: 2px #1926ad solid !important;
 }
 
 .user btn {
@@ -808,10 +809,10 @@ cet, hname, sizes, cde, paires, prci {
 n {
   font-weight: bold;
   display: inline-block;
-  background: #55bfd3;
+  background: #5565d3;
   padding-left: 5px;
   padding-right: 5px;
-  border-left: 2px #105f6e solid;
+  border-left: 2px #101c6e solid;
   user-select: none;
 }
 
@@ -935,10 +936,11 @@ button#donate {
     margin-right: 20px;
     border-radius: 10px;
     border: none;
-    background: #1995ad;
+    background: #192cad;
     font-family: monospace;
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
 }
 div#hu {
   position: fixed;

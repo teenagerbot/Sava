@@ -59,17 +59,29 @@ body {
 }
 
 .sidebar .sidebar-header {
-  border-bottom: 1px solid #2a2b3c;
-  background: #1995AD;
+  border-bottom: 1px solid #202ada;
+  background: #ffecb7;
 }
 
 .sidebar .sidebar-header h5 a {
-  color: #000000;
+  color: black;
+  background: linear-gradient(45deg, transparent, #3651ed);
+  padding-right: 6px;
+  padding-bottom: 2px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 6px #ffc107 solid;
 }
 
 .sidebar .sidebar-header p {
-  color: #232425;
+  color: #000000;
   font-size: 0.825rem;
+  background: linear-gradient(45deg, #ffff00, transparent);
+  padding-left: 6px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 6px #3651ed solid;
 }
 
 .sidebar .search .form-control ~ i {
@@ -249,7 +261,7 @@ body {
 }
 
 .main-color {
-  color: #ffc107;
+  color: #bf0707;
 }
 
 /** --------------------------------
@@ -258,7 +270,7 @@ body {
 -------------------------------- */
 
 .navbar {
-  background-color: var(--navbar-bg-color) !important;
+  background-color: #ffecb7 !important;
   border: none !important;
 }
 .navbar .dropdown-menu {
@@ -271,7 +283,7 @@ body {
   padding: 0 10px !important;
 }
 .navbar .navbar-brand {
-  color: #fff !important;
+  color: #3651ed !important;
 }
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-nav > li > a:hover {
@@ -621,13 +633,13 @@ button#dost1:active {
 li.has-dropdown {
     margin: 0px;
     margin-block-start: 0px;
-    border: 2px #7eacb8 solid;
+    border: 2px #566bb8 solid;
     border-radius: 10px;
     margin-bottom: 12px;
     padding-left: 5px;
     margin-right: 5px;
     margin-left: 9px;
-    box-shadow: inset 0px 0px 10px #1995ad;
+    box-shadow: inset 0px 0px 10px #191aad;
 }
 li.has-dropdown:not(:first-child) {
     margin-top: 12px;
@@ -645,11 +657,12 @@ li#more ul li:hover {
   background: linear-gradient(0deg, #46b3c8, transparent);
 }
 a.selected {
-  background: #178aa0;
+  background: #1751a0;
   padding-left: 5px;
   border-radius: 5px;
   width: fit-content;
   padding-right: 5px;
+  color: white !important;!i;!;
 }
 
 li a:hover {
@@ -669,7 +682,7 @@ a.navbar-brand {
     font-size: 37px;
 }
 .d1, .d2 {
-  background: #46b3c8;
+  background: #ffecb7 !important;
   width: 20px;
   height: 20px;
   position: relative;
@@ -685,4 +698,4 @@ a.navbar-brand {
   border-bottom-left-radius: 5px;
 }
 
-img.rounded-pill.img-fluid {border-top-right-radius: 10px !important;border-bottom-left-radius: 10px !important;position: relative;z-index: 1;/* box-shadow: 0px 0px 5px; */background: #1995ad;border-radius: 0px !important;!i;!;}
+img.rounded-pill.img-fluid {border-top-right-radius: 10px !important;border-bottom-left-radius: 10px !important;position: relative;z-index: 1;/* box-shadow: 0px 0px 5px; */background: #1995ad;border-radius: 0px !important;}
